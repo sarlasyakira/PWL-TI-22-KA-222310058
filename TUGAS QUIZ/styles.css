@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 270px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin: 16px 0 8px;
+}
+
+.favorites,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.favorite-item,
+.contact-item {
+  background-color: #FFB1FC;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 600;
+  color: #525151;
+  cursor: pointer;
+}
+
+.contact-item {
+  background-color: #F2F2F2;
+  font-weight: 500;
+}
+
+/* CHAT */
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
+.chat-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  color: #525151;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-name {
+  font-weight: 700;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #65C40C;
+  margin-right: 6px;
+}
+
+.status-text {
+  font-size: 14px;
+  color: #65C40C;
+  font-weight: 400;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.message.left {
+  align-self: flex-start;
+}
+
+.message.right {
+  align-self: flex-end;
+}
+
+.bubble {
+  background-color: #515151;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.bubble-time {
+  font-size: 10px;
+  color: #D8D5D5;
+  margin-left: 8px;
+}
+
+.sentiment {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #525151;
+  margin-top: 4px;
+}
+
+.sentiment-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.sentiment.positive .sentiment-dot {
+  background-color: #7BFF00;
+}
+
+.sentiment.negative .sentiment-dot {
+  background-color: #FF150D;
+}
+
+.sentiment.neutral .sentiment-dot {
+  background-color: #D8D5D5;
+}
+
+/* FOOTER */
+.chat-footer {
+  display: flex;
+  padding: 16px;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+}
+
+.chat-footer button {
+  background-color: #1E1E1E;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}

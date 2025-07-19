@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <input type="text" placeholder="Search or start a new chat">
+      <h3>Favorites 🥰</h3>
+      <div class="favorites">
+        <div class="favorite-item">MANDA TELMI</div>
+        <div class="favorite-item">Dhea NikMir</div>
+      </div>
+      <h3>Your Contact</h3>
+      <div class="contacts">
+        <div class="contact-item">Rio IBIK</div>
+        <div class="contact-item">EX</div>
+        <div class="contact-item">CRUSH</div>
+      </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat">
+      <div class="chat-header">
+        <div>
+          <div class="contact-name">MANDA TELMI</div>
+          <div class="status">
+            <span class="status-dot"></span>
+            <span class="status-text">online</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-body">
+        <!-- Bubble 1 (kiri) -->
+        <div class="message left">
+          <div class="bubble">
+            cong ke botani yuk <span class="bubble-time">12:58</span>
+          </div>
+          <div class="sentiment positive">
+            <span class="sentiment-dot"></span>positive
+          </div>
+        </div>
+
+        <!-- Bubble 2 (kanan) -->
+        <div class="message right">
+          <div class="bubble">
+            sialan! kapan? <span class="bubble-time">12:58</span>
+          </div>
+          <div class="sentiment negative">
+            <span class="sentiment-dot"></span>negative
+          </div>
+        </div>
+
+        <!-- Bubble 3 (kanan) -->
+        <div class="message right">
+          <div class="bubble">
+            kerja kan hari ini? beres kerja weh langsung ketemuan disana <span class="bubble-time">12:58</span>
+          </div>
+          <div class="sentiment positive">
+            <span class="sentiment-dot"></span>positive
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <input type="text" placeholder="Type your message...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
